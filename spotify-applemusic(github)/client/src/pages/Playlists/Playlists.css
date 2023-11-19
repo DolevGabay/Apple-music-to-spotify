@@ -1,0 +1,188 @@
+.header {
+  background-color: rgb(39, 38, 46);
+  color: #ffffff; /* Set your desired text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 30px;
+  margin: 0;
+}
+  .big-playlists-container {
+    background-color: rgb(39, 38, 46);
+  } 
+
+.playlist-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .playlist-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .playlist-item {
+    /* Remove 'display: flex;' property */
+    margin-bottom: 10px;
+}
+
+.playlist-image {
+    width: 20%; /* Set your desired width */
+    height: 20%; /* Set your desired height */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire space */
+    border-radius: 50%; /* Optional: Create a circular shape for the image */
+    margin-right: 10px; /* Add margin to separate the image from the name */
+    display: inline-block; /* Display the image as an inline-block element */
+    vertical-align: middle; /* Vertically align the image with the text */
+}
+
+.playlist-title {
+    margin-left: 10px;
+    display: inline-block; /* Display the name as an inline-block element */
+    vertical-align: middle; /* Vertically align the name with the image */
+}
+
+.playlist-cards {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.playlist-card {
+    background-color: #384255;
+    width: 100%; /* Set your desired width here */
+    height: 33%;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-card:hover {
+    background-color: #f0f0f0; /* Add a subtle background color on hover */
+}
+
+.selected {
+    background-color: #007bff; /* Add a different background color for selected cards */
+    color: white;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.playlist-image {
+    max-width: 100%; /* Adjust image size as needed */
+    margin-right: 5%;
+}
+
+.playlist-title {
+    margin: 0;
+}
+
+.choose-all-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.choose-all-checkbox {
+    margin-right: 8px;
+}
+
+/* Styles for the notification pop-up */
+.notification-popup {
+    display: none;
+}
+
+.notification-popup.show {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: floralwhite; /* Green background */
+    color: green;
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.notification-content {
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon {
+    font-size: 200%;
+    margin-right: 10px;
+}
+
+.loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+/* Additional styles as needed */
+
+
+
